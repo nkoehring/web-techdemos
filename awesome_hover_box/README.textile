@@ -1,0 +1,7 @@
+h1. awesome hover effect box
+
+Found at "treehouse":http://teamtreehouse.com.
+
+A simple made but stunning effect in pure CSS. Uses all the new gloss like box-shadows,
+background-gradients, animations and transformations.
+

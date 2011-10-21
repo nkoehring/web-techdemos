@@ -1,0 +1,8 @@
+h1. fake shader effect for backgrounds
+
+Used at "my old blog":http://old.log.koehr.in and as animated version (with canvas elements) at
+"http://blog2.nkoehring.de/":http://blog2.nkoehring.de/
+
+Uses a second effect image to create nice shader-like effects on background images. Unfortunately it
+works not as good as I want it to.
+
