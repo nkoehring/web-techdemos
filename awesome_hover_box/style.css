@@ -1,0 +1,210 @@
+body {
+  font: 16px/28px "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.75pt;
+  margin: 2em 2.3em;
+  color: #AAA;
+  background-color: #333;
+  max-width: 900px;
+}
+h1 { font-size: 1.6em; border-bottom: 1px solid #AAA; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
+a { color: #DDD; text-decoration: none; }
+a:visited { color: #777; }
+a:hover { color: #FFF; }
+
+#products {
+  list-style: none;
+  padding: 0;
+  float: left;
+}
+
+#products li {
+  float: left;
+  margin: 0 60px 60px 0;
+  position: relative;
+}
+
+#products li:nth-child(2),
+#products li:nth-child(4) {
+  margin-right: 0px;
+}
+
+#products li a h2 {
+  font-family: 'Hammersmith One', cursive;
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+#products li a h3 {
+  margin: 0;
+}
+
+#products li a p {
+  margin: 5px 0 0 0;
+  line-height: 1.4em;
+  font-size: 0.9em;
+  float: right;
+  width: 78%;
+}
+
+#products a .reward_pic {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  float: left;
+}
+
+#products #unlockable_1 a .reward_pic {
+  background: transparent url('../images/reward_icons/wireframes.png') top center no-repeat;
+}
+
+#products #unlockable_2 a .reward_pic {
+  background: transparent url('../images/reward_icons/screenshots.png') top center no-repeat;
+}
+
+#products #unlockable_3 a .reward_pic {
+  background: transparent url('../images/reward_icons/images.png') top center no-repeat;
+}
+
+#products #unlockable_4 a .reward_pic {
+  background: transparent url('../images/reward_icons/video.png') top center no-repeat;
+}
+
+#products li a {
+  text-decoration: none;
+  color: #fffbdb;
+  background: #222;
+  display: block;
+  padding: 10px 20px;
+  width: 340px;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  transition: 0.1s linear;
+  height: 130px;
+}
+
+#products li.awesome a {
+  background: #2E2E2E;
+  -webkit-box-shadow: 0px 0px 15px rgba(135,231,55,0.7);
+  -moz-box-shadow: 0px 0px 15px rgba(135,231,55,0.7);
+  box-shadow: 0px 0px 15px rgba(135,231,55,0.7);
+  -webkit-background-size: 3000px 1000px;
+  -moz-background-size: 3000px 1000px;
+  background-size: 3000px 1000px;
+}
+
+#products li.awesome a:hover {
+  -webkit-box-shadow: 0px 0px 25px rgba(135,231,55,0.9);
+  -moz-box-shadow: 0px 0px 25px rgba(135,231,55,0.9);
+  box-shadow: 0px 0px 25px rgba(135,231,55,0.9),
+        inset 0px 0px 25px rgba(255,255,255,0.2);
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%,#333), color-stop(45%,#444), color-stop(50%,#FFF), color-stop(55%,#444), color-stop(80%,#333));
+  background: -moz-linear-gradient(right bottom, #333 20%, #444 45%, #FFF 50%, #444 55%, #333 80%);
+  -webkit-animation: background_pan 1s 1 linear;
+  -moz-animation: background_pan 1s 1 linear;
+  animation: background_pan 1s 1 linear;
+  -webkit-background-size: 3000px 1000px;
+  -moz-background-size: 3000px 1000px;
+  background-size: 3000px 1000px;
+}
+
+@-webkit-keyframes background_pan {
+    0% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
+    }
+}
+
+@-moz-keyframes background_pan {
+    0% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
+    }
+}
+
+@keyframes background_pan {
+    0% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
+    }
+}
+
+#products li.awesome a h3 {
+  color: #87e737;
+}
+
+#products li.awesome:before {
+  content: "AWESOME!";
+  display: block;
+  color: #87e737;
+  background: #323232;
+  -webkit-box-shadow: 0px 0px 7px #87e737;
+  -moz-box-shadow: 0px 0px 7px #87e737;
+  box-shadow: 0px 0px 7px #87e737;
+  padding: 3px 8px;
+  font-size: 1.1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #87e737;
+  font-weight: bold;
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+#products li.sold_out a {
+  color: #555;
+}
+
+#products li.sold_out a .reward_pic {
+  opacity: 0.3;
+}
+
+#products li.sold_out:before {
+  content: "SOLD OUT!";
+  display: block;
+  color: #DD4444;
+  background: #323232;
+  padding: 3px 8px;
+  font-size: 1.1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #DD4444;
+  font-weight: bold;
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+#products li.sold_out a:hover {
+  -webkit-box-shadow: 0px 0px 25px #DD4444;
+  -moz-box-shadow: 0px 0px 25px #DD4444;
+  box-shadow: 0px 0px 25px #DD4444;
+  color: #777;
+}
+
+#products li.sold_out a:hover .reward_pic {
+  opacity: 0.5;
+}
+
+#products li.sold_out a h3 {
+  color: #888;
+}
+
