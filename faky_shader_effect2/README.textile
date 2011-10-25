@@ -1,0 +1,6 @@
+h1. fake shader effect with water droplets
+
+Uses a second effect image to create a nice shader effect. Additionally adds water droplets.
+
+To see it in action, look at: "tech.koehr.in/faky_shader_effect2/":http://tech.koehr.in
+
