@@ -5,3 +5,5 @@ Found at "treehouse":http://teamtreehouse.com.
 A simple made but stunning effect in pure CSS. Uses all the new gloss like box-shadows,
 background-gradients, animations and transformations.
 
+To see it in action, look at: "tech.koehr.in/awesome_hover_box/":http://tech.koehr.in
+
