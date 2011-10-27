@@ -1,0 +1,7 @@
+h1. "Matrix" effect
+
+Uses CSS animations, transformations (in lack of a working "writing-mode: tb-r") and @font-face to
+create a "Matrix" style effect.
+
+To see it in action, look at: "tech.koehr.in/matrix_animation/":http://tech.koehr.in
+
